@@ -47,3 +47,14 @@ while add_question.lower() == "yes":
     add_question = input("Add another question? (yes/no): ")
 
 print("Done. Your questions have been saved to", name)
+
+# Make it into a pygame
+# Initialize Pygame window and font
+# Ask user for the file name using text input
+# While the user wants to add questions:
+# Show input fields for: Question, Choice a,b,c, and d, and Correct answer (a/b/c/d)
+# Let the user navigate between fields (e.g. Tab key)
+# Validate correct answer is one of a/b/c/d
+# Save question and choices to the file
+# Ask if user wants to add another question
+# If user says no, quit
