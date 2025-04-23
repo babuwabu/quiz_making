@@ -49,7 +49,24 @@ while add_question.lower() == "yes":
 print("Done. Your questions have been saved to", name)
 
 # Make it into a pygame
+import pygame
+import sys
+
+pygame.init()
+
 # Initialize Pygame window and font
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Lulu's Quiz Maker")
+
+font = pygame.font.SysFont(None, 30)
+large_font = pygame.font.SysFont(None, 40)
+clock = pygame.time.Clock()
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+BLUE = (100, 100, 255)
+
 # Ask user for the file name using text input
 # While the user wants to add questions:
 # Show input fields for: Question, Choice a,b,c, and d, and Correct answer (a/b/c/d)
